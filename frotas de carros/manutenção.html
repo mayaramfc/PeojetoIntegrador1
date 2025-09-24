@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manutenção de Veículos</title>
+  
+</head>
+<body>
+     <link rel="stylesheet" href="manutenção.css">
+    <div class="container">
+        <h1>Manutenção de Veículos</h1>
+        <form>
+            <div class="form-group">
+                <label for="placa">Placa do Veículo</label>
+                <input type="text" id="placa" name="placa" placeholder="Ex: ABC-1234" required>
+            </div>
+            <div class="form-group">
+                <label for="dataManutencao">Data da Manutenção</label>
+                <input type="date" id="dataManutencao" name="dataManutencao" required>
+            </div>
+            <div class="form-group full-width">
+                <label for="descricao">Descrição do Serviço</label>
+                <textarea id="descricao" name="descricao" rows="4" placeholder="Detalhes do serviço realizado..." required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="custo">Custo Total (R$)</label>
+                <input type="text" id="custo" name="custo" placeholder="0.00" required>
+            </div>
+            <div class="form-group">
+                <label for="status">Status</label>
+                <select id="status" name="status" required>
+                    <option value="" disabled selected>Selecione o status</option>
+                    <option value="agendada">Agendada</option>
+                    <option value="emAndamento">Em Andamento</option>
+                    <option value="concluida">Concluída</option>
+                </select>
+            </div>
+            <div class="form-group full-width">
+                <label for="observacoes">Observações</label>
+                <input type="text" id="observacoes" name="observacoes">
+            </div>
+            
+            <button type="submit">Salvar Manutenção</button>
+        </form>
+    </div>
+</body>
+</html>

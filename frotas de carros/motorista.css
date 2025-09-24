@@ -1,0 +1,98 @@
+/* Estilos gerais para o corpo da página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f9; /* Fundo branco-azulado bem claro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+/* Estilo para a caixa do formulário */
+.container {
+    background-color: #ffffff; /* Fundo branco puro */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 650px; /* Largura um pouco maior para acomodar mais campos */
+}
+
+/* Título do formulário */
+h1 {
+    text-align: center;
+    color: #004d99; /* Azul escuro para o título */
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+/* Estilos para o formulário e grupos de campos */
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Duas colunas para os campos */
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo para os rótulos (labels) */
+label {
+    font-weight: bold;
+    color: #003366; /* Azul escuro */
+    margin-bottom: 5px;
+}
+
+/* Estilos para os campos de texto e caixas de seleção */
+input[type="text"], 
+input[type="date"], 
+input[type="email"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccd8e6; /* Borda azul clara */
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Efeito de foco nos campos */
+input[type="text"]:focus, 
+input[type="date"]:focus, 
+input[type="email"]:focus,
+select:focus {
+    border-color: #007bff; /* Azul vibrante no foco */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+/* Ajuste para campos que ocupam a largura total (se necessário) */
+.full-width {
+    grid-column: 1 / -1; /* Ocupa as duas colunas */
+}
+
+/* Estilo do botão "Cadastrar" */
+button {
+    grid-column: 1 / -1; /* Ocupa as duas colunas */
+    padding: 12px 20px;
+    background-color: #007bff; /* Azul principal do botão */
+    color: #fff; /* Texto branco */
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 10px;
+}
+
+/* Efeito ao passar o mouse sobre o botão */
+button:hover {
+    background-color: #0056b3; /* Azul mais escuro no hover */
+    transform: translateY(-2px);
+}

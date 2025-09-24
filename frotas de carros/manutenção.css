@@ -1,0 +1,23 @@
+/* Adicione este estilo ao seu arquivo estilo.css */
+textarea{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccd8e6;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    resize: vertical; /* Permite redimensionar apenas verticalmente */
+}
+
+textarea :focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
