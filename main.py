@@ -16,3 +16,16 @@ def menu():
 @app.route('/cadastrar-veiculos')
 def cadastrar_veículos():
     return render_template('Tela-de-cadastrar-veículo.html')
+
+#rotas para manutenção
+@app.route('/manutenção')
+def manutenção():
+    return render_template("manutenção")
+
+#rota para cadastro de usuários
+@app.route('/cadastrar-usuario')
+def cadastrar_usuario():
+    return render_template('usuario/create.html')
+
+if __name__=='__main__':
+    app.run(debug=True)
