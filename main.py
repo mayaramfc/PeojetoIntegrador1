@@ -27,5 +27,10 @@ def manutenção():
 def cadastrar_usuario():
     return render_template('usuario/create.html')
 
+#rota para relatorios
+@app.route('/relatorio')
+def relatorio():
+    return render_template('relatorio.html')
+
 if __name__=='__main__':
     app.run(debug=True)
