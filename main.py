@@ -20,7 +20,7 @@ def cadastrar_veículos():
 #rotas para manutenção
 @app.route('/manutenção')
 def manutenção():
-    return render_template("manutenção")
+    return render_template('manutenção.html')
 
 #rota para cadastro de usuários
 @app.route('/cadastrar-usuario')
